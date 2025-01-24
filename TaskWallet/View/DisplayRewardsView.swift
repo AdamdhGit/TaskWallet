@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DisplayRewardsView: View {
     
+    @State var viewModel = DisplayRewardsViewViewModel()
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \Reward.rewardName, ascending: true)]) var rewards: FetchedResults<Reward>
     @Binding var editModeOn: Bool
@@ -49,7 +50,7 @@ struct DisplayRewardsView: View {
                         if let imageUUID = i.imageUUID {
                             //if the reward has an imageUUID stored, proceed.
                             
-                            let rewardUIImage = retrieveFromDocumentsDirectory(imageUUID: imageUUID)
+                            let rewardUIImage = viewModel.retrieveFromDocumentsDirectory(imageUUID: imageUUID)
                             
                             
                             if UIDevice.current.userInterfaceIdiom == .phone {
@@ -97,7 +98,7 @@ struct DisplayRewardsView: View {
                                 
                                 if i.redeemPressed {
                                     
-                                    Image(systemName: "lock.open.fill").foregroundStyle(.orange)
+                                   lockOpenImage
                                     
                                 } else {
                                     
@@ -168,21 +169,6 @@ struct DisplayRewardsView: View {
         }.padding()
     }
     
-    func retrieveFromDocumentsDirectory(imageUUID: String) -> UIImage? {
-        let fileManager = FileManager.default
-        let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
-        
-        // Append the imageUUID to the Documents directory URL to form the file URL
-        let fileURL = documentsURL.appendingPathComponent(imageUUID)
-        
-        // Try to load image data from file URL
-        if let imageData = try? Data(contentsOf: fileURL) {
-            return UIImage(data: imageData)
-        }
-        
-        return nil
-    }
-    
     var lockClosedImage: some View {
         Image(systemName: "lock.fill")
     }
@@ -194,6 +180,10 @@ struct DisplayRewardsView: View {
             Image(systemName: "trash").opacity(0.7)
             
         }.foregroundStyle(.red)
+    }
+    
+    var lockOpenImage: some View {
+            Image(systemName: "lock.open.fill").foregroundStyle(.orange)
     }
     
 }

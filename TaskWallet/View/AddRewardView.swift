@@ -11,10 +11,10 @@ import SwiftUI
 
 struct AddRewardView: View {
     
+    @State var rewardName : String = ""
+    @State var creditsToUnlock:Double = 5
     @Environment(\.managedObjectContext) var moc
     @Environment(\.dismiss) var dismiss
-    @State var rewardName:String = ""
-    @State var creditsToUnlock:Double = 5
     @State var maxLength:Int = 30
     @State private var selectedPhoto: PhotosPickerItem?
     //item picked in photo library
@@ -23,7 +23,9 @@ struct AddRewardView: View {
     @State private var imageAsData:Data?
     
     var body: some View {
+        
         ScrollView {
+            
             Text("Create A New Reward").font(.title).padding(.top, 30)
             
             Divider().padding(.horizontal)
@@ -71,56 +73,22 @@ struct AddRewardView: View {
                   
                 } else if UIDevice.current.userInterfaceIdiom == .pad {
                     if let theExtractedImage = extractedImage {
-                        VStack{
+                        
+                        VStack {
+                            
                             theExtractedImage.resizable().aspectRatio(contentMode: .fill).frame(width: 300).clipShape(Circle()).padding(.top, 10)
+                            
                         }.frame(height: 100)
                     }
                 }
+                
                 createRewardButton
+                
             }
             
             Spacer()
             
         }.padding(.horizontal)
-    }
-    
-    func saveToDocumentsDirectory(data: Data){
-            
-            let fileName = UUID().uuidString + ".png"
-            
-            let fileManager = FileManager.default
-            let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
-            
-            let fileURL = documentsURL.appendingPathComponent(fileName)
-            
-            do {
-                try data.write(to: fileURL)
-            } catch {
-                print("Error saving image to documents directory: \(error)")
-            }
-            
-            let reward = Reward(context: moc)
-            reward.rewardName = rewardName
-            reward.imageUUID = fileName
-            reward.creditsRequired = Int64(creditsToUnlock)
-            
-            do {
-                try moc.save()
-            } catch {
-                print("Error saving to Core Data: \(error)")
-            }
-        }
-    
-    func saveWithoutPicture(){
-        
-        let reward = Reward(context: moc)
-        reward.rewardName = rewardName
-        reward.creditsRequired = Int64(creditsToUnlock)
-        do {
-            try moc.save()
-        } catch {
-            print("Error saving to Core Data: \(error)")
-        }
     }
     
     var rewardTitleTextField: some View {
@@ -199,6 +167,60 @@ struct AddRewardView: View {
             Spacer()
         }
     }
+    
+    func saveWithoutPicture(){
+        //properties in @Observable class. @Environment valus in functions.
+        
+        let reward = Reward(context: moc)
+        reward.rewardName = rewardName
+        reward.creditsRequired = Int64(creditsToUnlock)
+        
+        do {
+            
+            try moc.save()
+            
+        } catch {
+            
+            print("Error saving to Core Data: \(error)")
+            
+        }
+    }
+    
+    func saveToDocumentsDirectory(data: Data) {
+            
+            let fileName = UUID().uuidString + ".png"
+            
+            let fileManager = FileManager.default
+            let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
+            
+            let fileURL = documentsURL.appendingPathComponent(fileName)
+            
+            do {
+                
+                try data.write(to: fileURL)
+                
+            } catch {
+                
+                print("Error saving image to documents directory: \(error)")
+                
+            }
+            
+            let reward = Reward(context: moc)
+            reward.rewardName = rewardName
+            reward.imageUUID = fileName
+            reward.creditsRequired = Int64(creditsToUnlock)
+            
+            do {
+                
+                try moc.save()
+                
+            } catch {
+                
+                print("Error saving to Core Data: \(error)")
+                
+            }
+        }
+    
 }
 
 #Preview {

@@ -6,6 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BA7B7C932D3DC6F6009573AD /* DisplayRewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B7C922D3DC6F6009573AD /* DisplayRewardsView.swift */; };
+		BA7B7C952D3DC891009573AD /* DisplayRedemptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B7C942D3DC891009573AD /* DisplayRedemptionsView.swift */; };
+		BA7B7CDB2D3DD270009573AD /* DisplayRedemptionsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B7CDA2D3DD270009573AD /* DisplayRedemptionsViewViewModel.swift */; };
+		BA7B7CDD2D3DD456009573AD /* DisplayRewardsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B7CDC2D3DD456009573AD /* DisplayRewardsViewViewModel.swift */; };
+		BA7B7CE12D3DD4E6009573AD /* AddRewardViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B7CE02D3DD4E6009573AD /* AddRewardViewViewModel.swift */; };
+		BAD04A702D2DEE0C00C2AA47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD04A692D2DEE0C00C2AA47 /* Preview Assets.xcassets */; };
+		BAD04A712D2DEE0C00C2AA47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD04A6B2D2DEE0C00C2AA47 /* Assets.xcassets */; };
+		BAD04A722D2DEE0C00C2AA47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD04A6C2D2DEE0C00C2AA47 /* ContentView.swift */; };
+		BAD04A732D2DEE0C00C2AA47 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD04A6D2D2DEE0C00C2AA47 /* MainView.swift */; };
+		BAD04A742D2DEE0C00C2AA47 /* TaskWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD04A6E2D2DEE0C00C2AA47 /* TaskWalletApp.swift */; };
+		BAD04A762D2DEE5500C2AA47 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD04A752D2DEE5500C2AA47 /* ShopView.swift */; };
+		BAD04A792D2E016800C2AA47 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BAD04A772D2E016800C2AA47 /* CoreData.xcdatamodeld */; };
+		BAD04A8A2D2E04DC00C2AA47 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD04A892D2E04DC00C2AA47 /* AddTaskView.swift */; };
+		BAD04A8C2D2E108F00C2AA47 /* LoadCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD04A8B2D2E108F00C2AA47 /* LoadCoreData.swift */; };
+		BAD04A8E2D2E146600C2AA47 /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD04A8D2D2E146600C2AA47 /* TaskDetailView.swift */; };
+		BAD04A8F2D2E146600C2AA47 /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD04A8D2D2E146600C2AA47 /* TaskDetailView.swift */; };
+		BAD04A9E2D305A7600C2AA47 /* AddRewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD04A9D2D305A7600C2AA47 /* AddRewardView.swift */; };
+		BAD04AA12D3062C600C2AA47 /* Reward+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD04A9F2D3062C600C2AA47 /* Reward+CoreDataClass.swift */; };
+		BAD04AA32D3062C600C2AA47 /* Reward+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD04A9F2D3062C600C2AA47 /* Reward+CoreDataClass.swift */; };
+		BAD04B842D31806800C2AA47 /* RecentEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD04B802D31806800C2AA47 /* RecentEntry+CoreDataClass.swift */; };
+		BAD04B862D31806800C2AA47 /* UserTask+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD04B822D31806800C2AA47 /* UserTask+CoreDataClass.swift */; };
+		BAD04B882D31806800C2AA47 /* RecentEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD04B802D31806800C2AA47 /* RecentEntry+CoreDataClass.swift */; };
+		BAD04B8A2D31806800C2AA47 /* UserTask+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD04B822D31806800C2AA47 /* UserTask+CoreDataClass.swift */; };
+		BAD04B8F2D318A9600C2AA47 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BAD04B8E2D318A9600C2AA47 /* ConfettiSwiftUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		BAD04A292D2CC3F100C2AA47 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,17 +51,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA7B7C922D3DC6F6009573AD /* DisplayRewardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayRewardsView.swift; sourceTree = "<group>"; };
+		BA7B7C942D3DC891009573AD /* DisplayRedemptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayRedemptionsView.swift; sourceTree = "<group>"; };
+		BA7B7CDA2D3DD270009573AD /* DisplayRedemptionsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayRedemptionsViewViewModel.swift; sourceTree = "<group>"; };
+		BA7B7CDC2D3DD456009573AD /* DisplayRewardsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayRewardsViewViewModel.swift; sourceTree = "<group>"; };
+		BA7B7CE02D3DD4E6009573AD /* AddRewardViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRewardViewViewModel.swift; sourceTree = "<group>"; };
 		BAD04A182D2CC3EE00C2AA47 /* TaskWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD04A282D2CC3F100C2AA47 /* TaskWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD04A322D2CC3F100C2AA47 /* TaskWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAD04A692D2DEE0C00C2AA47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BAD04A6B2D2DEE0C00C2AA47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAD04A6C2D2DEE0C00C2AA47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BAD04A6D2D2DEE0C00C2AA47 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BAD04A6E2D2DEE0C00C2AA47 /* TaskWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskWalletApp.swift; sourceTree = "<group>"; };
+		BAD04A752D2DEE5500C2AA47 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		BAD04A782D2E016800C2AA47 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		BAD04A892D2E04DC00C2AA47 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		BAD04A8B2D2E108F00C2AA47 /* LoadCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCoreData.swift; sourceTree = "<group>"; };
+		BAD04A8D2D2E146600C2AA47 /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
+		BAD04A9D2D305A7600C2AA47 /* AddRewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRewardView.swift; sourceTree = "<group>"; };
+		BAD04A9F2D3062C600C2AA47 /* Reward+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reward+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BAD04AA52D3063A100C2AA47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BAD04B802D31806800C2AA47 /* RecentEntry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecentEntry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BAD04B822D31806800C2AA47 /* UserTask+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserTask+CoreDataClass.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		BAD04A1A2D2CC3EE00C2AA47 /* TaskWallet */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TaskWallet;
-			sourceTree = "<group>";
-		};
 		BAD04A2B2D2CC3F100C2AA47 /* TaskWalletTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TaskWalletTests;
@@ -52,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD04B8F2D318A9600C2AA47 /* ConfettiSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +115,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA7B7C962D3DCCA3009573AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BAD04A6C2D2DEE0C00C2AA47 /* ContentView.swift */,
+				BAD04A6D2D2DEE0C00C2AA47 /* MainView.swift */,
+				BA7B7C942D3DC891009573AD /* DisplayRedemptionsView.swift */,
+				BAD04A892D2E04DC00C2AA47 /* AddTaskView.swift */,
+				BAD04A8D2D2E146600C2AA47 /* TaskDetailView.swift */,
+				BAD04A752D2DEE5500C2AA47 /* ShopView.swift */,
+				BA7B7C922D3DC6F6009573AD /* DisplayRewardsView.swift */,
+				BAD04A9D2D305A7600C2AA47 /* AddRewardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA7B7C972D3DCCC2009573AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BAD04A8B2D2E108F00C2AA47 /* LoadCoreData.swift */,
+				BAD04B802D31806800C2AA47 /* RecentEntry+CoreDataClass.swift */,
+				BAD04B822D31806800C2AA47 /* UserTask+CoreDataClass.swift */,
+				BAD04A9F2D3062C600C2AA47 /* Reward+CoreDataClass.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA7B7CE22D3DD6BA009573AD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BA7B7CDA2D3DD270009573AD /* DisplayRedemptionsViewViewModel.swift */,
+				BA7B7CDC2D3DD456009573AD /* DisplayRewardsViewViewModel.swift */,
+				BA7B7CE02D3DD4E6009573AD /* AddRewardViewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		BAD04A0F2D2CC3EE00C2AA47 = {
 			isa = PBXGroup;
 			children = (
-				BAD04A1A2D2CC3EE00C2AA47 /* TaskWallet */,
+				BAD04A6F2D2DEE0C00C2AA47 /* TaskWallet */,
 				BAD04A2B2D2CC3F100C2AA47 /* TaskWalletTests */,
 				BAD04A352D2CC3F100C2AA47 /* TaskWalletUITests */,
+				BAD04B8D2D318A9600C2AA47 /* Frameworks */,
 				BAD04A192D2CC3EE00C2AA47 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +170,36 @@
 				BAD04A322D2CC3F100C2AA47 /* TaskWalletUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BAD04A6A2D2DEE0C00C2AA47 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BAD04A692D2DEE0C00C2AA47 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BAD04A6F2D2DEE0C00C2AA47 /* TaskWallet */ = {
+			isa = PBXGroup;
+			children = (
+				BAD04AA52D3063A100C2AA47 /* Info.plist */,
+				BAD04A6E2D2DEE0C00C2AA47 /* TaskWalletApp.swift */,
+				BAD04A6B2D2DEE0C00C2AA47 /* Assets.xcassets */,
+				BA7B7C972D3DCCC2009573AD /* Model */,
+				BA7B7C962D3DCCA3009573AD /* View */,
+				BA7B7CE22D3DD6BA009573AD /* ViewModel */,
+				BAD04A772D2E016800C2AA47 /* CoreData.xcdatamodeld */,
+				BAD04A6A2D2DEE0C00C2AA47 /* Preview Content */,
+			);
+			path = TaskWallet;
+			sourceTree = "<group>";
+		};
+		BAD04B8D2D318A9600C2AA47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,11 +217,9 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				BAD04A1A2D2CC3EE00C2AA47 /* TaskWallet */,
-			);
 			name = TaskWallet;
 			packageProductDependencies = (
+				BAD04B8E2D318A9600C2AA47 /* ConfettiSwiftUI */,
 			);
 			productName = TaskWallet;
 			productReference = BAD04A182D2CC3EE00C2AA47 /* TaskWallet.app */;
@@ -195,6 +303,9 @@
 			);
 			mainGroup = BAD04A0F2D2CC3EE00C2AA47;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BAD04B8C2D3189C400C2AA47 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BAD04A192D2CC3EE00C2AA47 /* Products */;
 			projectDirPath = "";
@@ -212,6 +323,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD04A702D2DEE0C00C2AA47 /* Preview Assets.xcassets in Resources */,
+				BAD04A712D2DEE0C00C2AA47 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +349,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD04A8C2D2E108F00C2AA47 /* LoadCoreData.swift in Sources */,
+				BAD04A722D2DEE0C00C2AA47 /* ContentView.swift in Sources */,
+				BAD04AA32D3062C600C2AA47 /* Reward+CoreDataClass.swift in Sources */,
+				BA7B7CDD2D3DD456009573AD /* DisplayRewardsViewViewModel.swift in Sources */,
+				BA7B7C932D3DC6F6009573AD /* DisplayRewardsView.swift in Sources */,
+				BA7B7C952D3DC891009573AD /* DisplayRedemptionsView.swift in Sources */,
+				BAD04A8A2D2E04DC00C2AA47 /* AddTaskView.swift in Sources */,
+				BAD04A732D2DEE0C00C2AA47 /* MainView.swift in Sources */,
+				BAD04A792D2E016800C2AA47 /* CoreData.xcdatamodeld in Sources */,
+				BAD04A762D2DEE5500C2AA47 /* ShopView.swift in Sources */,
+				BAD04B882D31806800C2AA47 /* RecentEntry+CoreDataClass.swift in Sources */,
+				BAD04B8A2D31806800C2AA47 /* UserTask+CoreDataClass.swift in Sources */,
+				BAD04A9E2D305A7600C2AA47 /* AddRewardView.swift in Sources */,
+				BAD04A742D2DEE0C00C2AA47 /* TaskWalletApp.swift in Sources */,
+				BA7B7CDB2D3DD270009573AD /* DisplayRedemptionsViewViewModel.swift in Sources */,
+				BA7B7CE12D3DD4E6009573AD /* AddRewardViewViewModel.swift in Sources */,
+				BAD04A8F2D2E146600C2AA47 /* TaskDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +373,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD04AA12D3062C600C2AA47 /* Reward+CoreDataClass.swift in Sources */,
+				BAD04A8E2D2E146600C2AA47 /* TaskDetailView.swift in Sources */,
+				BAD04B842D31806800C2AA47 /* RecentEntry+CoreDataClass.swift in Sources */,
+				BAD04B862D31806800C2AA47 /* UserTask+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,21 +528,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"TaskWallet/Preview Content\"";
 				DEVELOPMENT_TEAM = 52R8C57Y3B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TaskWallet/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to allow you to upload images of rewards.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = AdamHeidmann.TaskWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -423,21 +559,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"TaskWallet/Preview Content\"";
 				DEVELOPMENT_TEAM = 52R8C57Y3B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TaskWallet/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to allow you to upload images of rewards.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = AdamHeidmann.TaskWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -558,6 +696,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BAD04B8C2D3189C400C2AA47 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BAD04B8E2D318A9600C2AA47 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BAD04B8C2D3189C400C2AA47 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		BAD04A772D2E016800C2AA47 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BAD04A782D2E016800C2AA47 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = BAD04A782D2E016800C2AA47 /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BAD04A102D2CC3EE00C2AA47 /* Project object */;
 }

@@ -1,2 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23605" systemVersion="24C101" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier=""/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23605" systemVersion="24C101" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="RecentEntry" representedClassName="RecentEntry" syncable="YES" codeGenerationType="category">
+        <attribute name="creditsReceived" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="dateSaved" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="origin" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserTask" inverseName="recentEntry" inverseEntity="UserTask"/>
+    </entity>
+    <entity name="Reward" representedClassName="Reward" syncable="YES" codeGenerationType="category">
+        <attribute name="archived" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="creditsRequired" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="imageUUID" optional="YES" attributeType="String"/>
+        <attribute name="redeemPressed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="rewardName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="UserTask" representedClassName="UserTask" syncable="YES" codeGenerationType="category">
+        <attribute name="accumulationStyle" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="recentEntry" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RecentEntry" inverseName="origin" inverseEntity="RecentEntry"/>
+    </entity>
+</model>

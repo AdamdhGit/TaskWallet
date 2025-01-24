@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct TaskWalletApp: App {
+    
+    @StateObject var loadCoreData = LoadCoreData()
+    
     var body: some Scene {
+        
         WindowGroup {
-            ContentView()
+            
+            MainView()
+                //.preferredColorScheme(.light)
+                .environment(\.managedObjectContext, loadCoreData.container.viewContext)
+                //takes the context of the CoreData and puts it into the managedObjectContext
+            
         }
     }
 }

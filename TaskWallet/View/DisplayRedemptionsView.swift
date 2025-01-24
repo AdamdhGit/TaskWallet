@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DisplayRedemptionsView: View {
     
+    @State var viewModel = DisplayRedemptionsViewViewModel()
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \Reward.rewardName, ascending: true)]) var rewards: FetchedResults<Reward>
     @Binding var editModeOn: Bool
@@ -49,7 +50,7 @@ struct DisplayRedemptionsView: View {
                         if let imageUUID = i.imageUUID {
                             //if the reward has an imageUUID stored, proceed.
                             
-                            let rewardUIImage = retrieveFromDocumentsDirectory(imageUUID: imageUUID)
+                            let rewardUIImage = viewModel.retrieveFromDocumentsDirectory(imageUUID: imageUUID)
                             
                             if UIDevice.current.userInterfaceIdiom == .phone {
                                 
@@ -141,21 +142,6 @@ struct DisplayRedemptionsView: View {
                 }
             }
         }.padding()
-    }
-    
-    func retrieveFromDocumentsDirectory(imageUUID: String) -> UIImage? {
-        let fileManager = FileManager.default
-        let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
-        
-        // Append the imageUUID to the Documents directory URL to form the file URL
-        let fileURL = documentsURL.appendingPathComponent(imageUUID)
-        
-        // Try to load image data from file URL
-        if let imageData = try? Data(contentsOf: fileURL) {
-            return UIImage(data: imageData)
-        }
-        
-        return nil
     }
     
     var lockOpenImage: some View {
